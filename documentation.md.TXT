@@ -1,0 +1,33 @@
+# PDF Chatbot Documentation
+
+## Overview
+This app lets users upload a PDF and ask questions about its content.
+
+## Main Components
+
+### 1. load_llm()
+- Loads the FLAN-T5 model for question answering.
+
+### 2. PDF Upload and Processing
+- Upload PDF with Streamlit.
+- Split PDF pages into chunks.
+- Generate embeddings using HuggingFace.
+
+### 3. Question Answering
+- Input question from user.
+- Retrieve relevant document chunks.
+- Use LLM to answer question based on context.
+
+## How it Works
+- User uploads PDF.
+- The app extracts and splits text.
+- Creates embeddings and stores in vectorstore.
+- User asks question, app retrieves relevant context and answers.
+
+## Requirements
+- Python 3.x
+- streamlit, langchain, transformers, faiss, etc.
+
+## Usage
+Run with:  
+`streamlit run chatbot.py`
