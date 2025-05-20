@@ -1,4 +1,4 @@
-Python 3.8+
+Python
 
 streamlit
 
@@ -10,4 +10,8 @@ sentence-transformers
 
 faiss-cpu
 
-PyPDF2 or pypdf
+PyPDF2
+
+pypdf
+
+python-dotenv

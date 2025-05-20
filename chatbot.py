@@ -1,12 +1,14 @@
 import streamlit as st
 import os
-import time
+from dotenv import load_dotenv
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import PyPDFLoader
 from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
+
+load_dotenv(override=True)
 
 # ----------------------------
 # Initialize Session State
@@ -41,7 +43,8 @@ with st.sidebar:
 # ----------------------------
 # Set API Key and Load LLM
 # ----------------------------
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+os.environ["GROQ_MODEL_NAME"]= os.getenv("llama3-8b-8192")
 
 @st.cache_resource
 def load_llm():
