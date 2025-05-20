@@ -10,17 +10,29 @@ Features:
 - Powered by Groq's `llama3-8b-8192` large language model
 - Chat history is shown in the main screen and sidebar
 
-Installation:
+Installation
+ 1. Clone this repository
 
-1. Clone this repository
 ```bash
 git clone https://github.com/FizaAli13/pdf-chatbot.git
 cd pdf-chatbot
-2. Create a virtual environment 
-3. Install dependencies
+```
+2. Create a virtual environment
+```bash
+python -m venv venv
+venv\Scripts\activate  # For Windows
+source venv/bin/activate  # For macOS/Linux
+```
+4. Install dependencies
+```bash
 pip install -r requirements.txt
-4. Run the app
-streamlit run c:/Users/DELL/Desktop/iternship/"pdf chatbot"/chatbot.py
+```
+5. Run the app
+```bash
+streamlit run chatbot.py
+```
+
 
 Contact:
-Created by Fiza Ali (https://github.com/FizaAli13) 
+Created by Fiza Ali 
+GitHub: @FizaAli13 (https://github.com/FizaAli13) 
