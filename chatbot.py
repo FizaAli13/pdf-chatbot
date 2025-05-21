@@ -44,7 +44,7 @@ with st.sidebar:
 # Set API Key and Load LLM
 # ----------------------------
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
-os.environ["GROQ_MODEL_NAME"]= os.getenv("llama3-8b-8192")
+os.environ["GROQ_MODEL_NAME"]= os.getenv("GROQ_MODEL_NAME")
 
 @st.cache_resource
 def load_llm():
