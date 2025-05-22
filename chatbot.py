@@ -49,7 +49,7 @@ os.environ["GROQ_MODEL_NAME"]= os.getenv("GROQ_MODEL_NAME")
 @st.cache_resource
 def load_llm():
     return ChatGroq(
-        model="llama3-8b-8192",
+        model=os.environ["GROQ_MODEL_NAME"],
         temperature=0,
         max_tokens=1024
     )
